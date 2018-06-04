@@ -1,0 +1,47 @@
+/*========Styles for the sub-section 
+ ==========layout/subsection
+ ==========================================*/
+
+.sub-section {
+    &__image {
+        margin-top: 5rem;
+    }
+    img#subcity {
+        box-shadow: 0.8rem -0.8rem 1rem grey;
+    }
+    &__box {
+        margin-top: 4.5rem;
+        &-title {
+            font-weight: 700;
+        }
+        &-divider {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid $text-tertiary-color!important;
+            width: 15%;
+            margin-left: 0;
+        }
+        &-paragraph {
+            width: 80%;
+            margin-left: .5rem;
+            color: $text-primary-color;
+        }
+    }
+    &__sub {
+        width: 90%;
+        margin-left: 2rem;
+        &-box-icon {
+            display: inline-block;
+            color: $text-tertiary-color;
+            float: left;
+            font-size: 1rem;
+            padding: 8px;
+            border: 1px solid $text-tertiary-color;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        &-box-paragraph {
+            color: $text-primary-color;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+nav.navbar {
+    background-color: $footer-background-color!important;
+    a.navbar-brand {
+        font-size: 2.5rem;
+        word-spacing: .5rem;
+        .navbrand-secondary {
+            @include secondary-brand-color;
+        }
+    }
+    .active>.nav-link {
+        color: $text-tertiary-color!important;
+    }
+    li.nav-item {
+        padding: 8px 10px;
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+        a.nav-link {
+            color: $text-secondary-color;
+            transition: all .5s ease-in;
+            &:hover {
+                color: $text-tertiary-color;
+                font-weight: 600;
+            }
+            &:active {
+                color: $text-tertiary-color;
+                font-weight: 600;
+            }
+            &:visited {
+                color: $text-secondary-color;
+            }
+        }
+    }
+    button.navbar-toggler {
+        padding: .45rem .95rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background: 0 0;
+        border-radius: .35rem;
+    }
+}

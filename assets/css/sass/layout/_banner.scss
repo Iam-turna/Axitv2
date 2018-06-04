@@ -1,0 +1,131 @@
+/*---Styles for the banner Section----*/
+
+.banner-section {
+    margin-top: 5rem;
+    height: 75vh;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .banner-section-box1 {
+        margin-top: 7rem;
+        .banner-section-box1__brand {
+            font-size: 6rem;
+            word-spacing: 1.5rem;
+            margin-bottom: 4rem;
+            color: $text-secondary-color;
+            .banner-brand__secondary {
+                @include secondary-brand-color;
+            }
+        }
+        .banner-section-box1__subbrand {
+            color: $text-secondary-color;
+        }
+        .divider {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid $text-secondary-color!important;
+            width: 15%;
+            margin-left: 0;
+        }
+        .banner-section-box1__text {
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+            color: grey;
+            width: 80%;
+        }
+        .button-dark {
+            color: $text-secondary-color;
+            background-color: transparent;
+            background-image: none;
+            border-color: $text-secondary-color;
+            padding: 8px 15px 8px 15px;
+            border-radius: 0;
+            transition: all 1sec;
+            &:hover {
+                color: $text-tertiary-color;
+                background-color: $heading-color;
+                border-color: $text-tertiary-color;
+                transform: scale(1.1);
+            }
+        }
+    }
+    .banner-section-box2 {
+        margin-top: 12rem;
+        height: 20.85rem;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: transparent;
+        padding: 2rem;
+        width: 90%;
+        position: relative;
+        .form-header {
+            color: $footer-background-color;
+            background-color: $form-header-bg-color;
+            height: 3rem;
+            width: 100%;
+            text-transform: capitalize;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-bottom: 1rem;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            .secondary {
+                color: $text-tertiary-color;
+            }
+        }
+        .form-body {
+            position: absolute;
+            top: 3rem;
+            left: 0px;
+            background-color: $form-body-bg-color;
+            width: 100%;
+            padding: 39px;
+            .input-group-addon {
+                font-size: 1rem;
+                color: #495057;
+                text-align: left;
+                background-color: #fff;
+                border-bottom: 1px solid black;
+                border-left: 0;
+                border-top: 0;
+                border-radius: 0;
+            }
+            .form-control {
+                border-radius: 0;
+                border: 0;
+                border-bottom: 1px solid black;
+                color: $text-primary-color;
+                background-color: transparent;
+                input#email {
+                    color: $text-primary-color;
+                    background-color: transparent
+                }
+            }
+        }
+        .form-footer {
+            background-color: $form-footer-bg-color;
+            z-index: 2;
+            position: absolute;
+            top: 18.2rem;
+        }
+        button.btn.bottom-button {
+            width: 387%;
+            position: absolute;
+            display: inline-block;
+            left: -32px;
+            width: 25.1rem;
+            height: 3rem;
+            top: -0.335rem;
+            color: white;
+            background-color: $text-tertiary-color;
+            border-radius: 0;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            &:hover {
+                background-color: darken($text-tertiary-color, 15%);
+                font-weight: 600;
+            }
+        }
+    }
+}

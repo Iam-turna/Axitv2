@@ -1,0 +1,178 @@
+/*Styles for the social networks section*/
+
+div.section-social {
+    .row {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .section-social__title {
+        @include margin-bottom;
+    }
+    .social-social_paragraph {
+        color: $text-primary-color;
+    }
+    .list-social {
+        display: inline-block;
+        margin-top: 1.5rem;
+        color: $text-primary-color;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        margin-left: 1%;
+        .social-links {
+            @include visited;
+            transition: all 3s;
+            i.fa {
+                margin-right: 5%;
+            }
+            // Facebook
+            i.fa.fa-facebook:hover {
+                background-color: $facebook-bg-color;
+                @include links;
+            }
+            i.fa.fa-facebook:active {
+                background-color: $facebook-bg-color;
+                @include links;
+            }
+            i.fa.fa-facebook:visited {
+                @include visited;
+            }
+            //Twitter
+            i.fa.fa-twitter:hover {
+                background-color: $twitter-bg-color;
+                @include links;
+            }
+            i.fa.fa-twitter:active {
+                background-color: $twitter-bg-color;
+                @include links;
+            }
+            i.fa.fa-twitter:visited {
+                @include visited;
+            }
+            //Google-plus
+            i.fa.fa-google-plus:hover {
+                background-color: $googleplus-bg-color;
+                @include links;
+            }
+            i.fa.fa-google-plus:active {
+                background-color: $googleplus-bg-color;
+                @include links;
+            }
+            i.fa.fa-google-plus:visited {
+                @include visited;
+            }
+            //Pinterest
+            i.fa.fa-pinterest:hover {
+                background-color: $pinterest-bg-color;
+                @include links;
+            }
+            i.fa.fa-pinterest:active {
+                background-color: $pinterest-bg-color;
+                @include links;
+            }
+            i.fa.fa-pinterest:visited {
+                @include visited;
+            }
+            //Instagram
+            i.fa.fa-instagram:hover {
+                background-color: $instagram-bg-color;
+                @include links;
+            }
+            i.fa.fa-instagram:active {
+                background-color: $instagram-bg-color;
+                @include links;
+            }
+            i.fa.fa-instagram:visited {
+                @include visited;
+            }
+            // Wifi
+            i.fa.fa-wifi:hover {
+                background-color: $wifi-bg-color;
+                @include links;
+            }
+            i.fa.fa-wifi:active {
+                background-color: $wifi-bg-color;
+                @include links;
+            }
+            i.fa.fa-wifi:visited {
+                @include visited;
+            }
+        }
+    }
+}
+
+
+/* Tabs Section Styles*/
+
+div.section-tabs {
+    background-color: $section-tab-bg-color;
+    .tab-buttons {
+        @include tabs-margin-top;
+        margin-bottom: 4rem;
+        .btn-tabs:link {
+            display: block;
+            background-color: $tab-btn-bg-color;
+            width: 5.5rem;
+            height: 5.5rem;
+            color: $text-secondary-color;
+            font-size: 1.5rem;
+            border-radius: 0;
+            margin-top: 2px;
+            position: relative;
+            box-shadow: 0 -.1rem .2rem $header-background-color;
+            .clicked {
+                background-color: $text-tertiary-color!important;
+            }
+            &:hover {
+                background-color: $text-tertiary-color;
+            }
+            span.link-text {
+                position: relative;
+                top: 28%;
+                color: $text-secondary-color;
+            }
+        }
+        .btn-tabs:visited {
+            color: $text-secondary-color;
+        }
+    }
+    .tab-container {
+        margin-top: 4rem;
+        position: relative;
+        .tabs-card {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .tabs-card:not(:first-child) {
+            display: none;
+        }
+        .section-tab3__title {
+            text-transform: capitalize;
+            margin-bottom: 1rem;
+        }
+        .section-tabs__paragraph {
+            color: $text-primary-color;
+            word-spacing: 2px;
+        }
+        .btn-download {
+            color: $text-tertiary-color;
+            background-color: transparent;
+            border: 1px solid $text-tertiary-color;
+            height: 3rem;
+            width: 25%;
+            margin-top: 2rem;
+            &:hover {
+                color: $text-secondary-color;
+                background-color: $text-tertiary-color;
+            }
+        }
+    }
+    .img-container {
+        margin-top: 2rem;
+        .img-fluid {
+            max-width: 170%;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,363 @@
+nav.navbar {
+  background-color: #000000 !important; }
+  nav.navbar a.navbar-brand {
+    font-size: 2.5rem;
+    word-spacing: .5rem; }
+    nav.navbar a.navbar-brand .navbrand-secondary {
+      color: #ff8b38; }
+  nav.navbar .active > .nav-link {
+    color: #ff8b38 !important; }
+  nav.navbar li.nav-item {
+    padding: 8px 10px; }
+    nav.navbar li.nav-item:not(:last-child) {
+      margin-right: 1rem; }
+    nav.navbar li.nav-item a.nav-link {
+      color: #fff;
+      transition: all .5s ease-in; }
+      nav.navbar li.nav-item a.nav-link:hover {
+        color: #ff8b38;
+        font-weight: 600; }
+      nav.navbar li.nav-item a.nav-link:active {
+        color: #ff8b38;
+        font-weight: 600; }
+      nav.navbar li.nav-item a.nav-link:visited {
+        color: #fff; }
+  nav.navbar button.navbar-toggler {
+    padding: .45rem .95rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: 0 0;
+    border-radius: .35rem; }
+
+/*---Styles for the banner Section----*/
+.banner-section {
+  margin-top: 5rem;
+  height: 75vh;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .banner-section .banner-section-box1 {
+    margin-top: 7rem; }
+    .banner-section .banner-section-box1 .banner-section-box1__brand {
+      font-size: 6rem;
+      word-spacing: 1.5rem;
+      margin-bottom: 4rem;
+      color: #fff; }
+      .banner-section .banner-section-box1 .banner-section-box1__brand .banner-brand__secondary {
+        color: #ff8b38; }
+    .banner-section .banner-section-box1 .banner-section-box1__subbrand {
+      color: #fff; }
+    .banner-section .banner-section-box1 .divider {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #fff !important;
+      width: 15%;
+      margin-left: 0; }
+    .banner-section .banner-section-box1 .banner-section-box1__text {
+      margin-top: 1.5rem;
+      margin-bottom: 2.5rem;
+      color: grey;
+      width: 80%; }
+    .banner-section .banner-section-box1 .button-dark {
+      color: #fff;
+      background-color: transparent;
+      background-image: none;
+      border-color: #fff;
+      padding: 8px 15px 8px 15px;
+      border-radius: 0;
+      transition: all 1sec; }
+      .banner-section .banner-section-box1 .button-dark:hover {
+        color: #ff8b38;
+        background-color: #000000;
+        border-color: #ff8b38;
+        transform: scale(1.1); }
+  .banner-section .banner-section-box2 {
+    margin-top: 12rem;
+    height: 20.85rem;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: transparent;
+    padding: 2rem;
+    width: 90%;
+    position: relative; }
+    .banner-section .banner-section-box2 .form-header {
+      color: #000000;
+      background-color: #f5f5f5;
+      height: 3rem;
+      width: 100%;
+      text-transform: capitalize;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-bottom: 1rem;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px; }
+      .banner-section .banner-section-box2 .form-header .secondary {
+        color: #ff8b38; }
+    .banner-section .banner-section-box2 .form-body {
+      position: absolute;
+      top: 3rem;
+      left: 0px;
+      background-color: #fff;
+      width: 100%;
+      padding: 39px; }
+      .banner-section .banner-section-box2 .form-body .input-group-addon {
+        font-size: 1rem;
+        color: #495057;
+        text-align: left;
+        background-color: #fff;
+        border-bottom: 1px solid black;
+        border-left: 0;
+        border-top: 0;
+        border-radius: 0; }
+      .banner-section .banner-section-box2 .form-body .form-control {
+        border-radius: 0;
+        border: 0;
+        border-bottom: 1px solid black;
+        color: #a6a7a9;
+        background-color: transparent; }
+        .banner-section .banner-section-box2 .form-body .form-control input#email {
+          color: #a6a7a9;
+          background-color: transparent; }
+    .banner-section .banner-section-box2 .form-footer {
+      background-color: #ff9b51;
+      z-index: 2;
+      position: absolute;
+      top: 18.2rem; }
+    .banner-section .banner-section-box2 button.btn.bottom-button {
+      width: 387%;
+      position: absolute;
+      display: inline-block;
+      left: -32px;
+      width: 25.1rem;
+      height: 3rem;
+      top: -0.335rem;
+      color: white;
+      background-color: #ff8b38;
+      border-radius: 0;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px; }
+      .banner-section .banner-section-box2 button.btn.bottom-button:hover {
+        background-color: #eb6200;
+        font-weight: 600; }
+
+/*Styles for the social networks section*/
+div.section-social .row {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem; }
+div.section-social .section-social__title {
+  margin-bottom: 0.5rem; }
+div.section-social .social-social_paragraph {
+  color: #a6a7a9; }
+div.section-social .list-social {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #a6a7a9;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  margin-left: 1%; }
+  div.section-social .list-social .social-links {
+    text-decoration: none;
+    color: #a6a7a9;
+    transition: all 3s; }
+    div.section-social .list-social .social-links i.fa {
+      margin-right: 5%; }
+    div.section-social .list-social .social-links i.fa.fa-facebook:hover {
+      background-color: blue;
+      color: white;
+      box-sizing: border-box;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%; }
+    div.section-social .list-social .social-links i.fa.fa-facebook:active {
+      background-color: blue;
+      color: white;
+      box-sizing: border-box;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%; }
+    div.section-social .list-social .social-links i.fa.fa-facebook:visited {
+      text-decoration: none;
+      color: #a6a7a9; }
+    div.section-social .list-social .social-links i.fa.fa-twitter:hover {
+      background-color: #008080;
+      color: white;
+      box-sizing: border-box;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%; }
+    div.section-social .list-social .social-links i.fa.fa-twitter:active {
+      background-color: #008080;
+      color: white;
+      box-sizing: border-box;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%; }
+    div.section-social .list-social .social-links i.fa.fa-twitter:visited {
+      text-decoration: none;
+      color: #a6a7a9; }
+    div.section-social .list-social .social-links i.fa.fa-google-plus:hover {
+      background-color: #ff0000;
+      color: white;
+      box-sizing: border-box;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%; }
+    div.section-social .list-social .social-links i.fa.fa-google-plus:active {
+      background-color: #ff0000;
+      color: white;
+      box-sizing: border-box;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%; }
+    div.section-social .list-social .social-links i.fa.fa-google-plus:visited {
+      text-decoration: none;
+      color: #a6a7a9; }
+    div.section-social .list-social .social-links i.fa.fa-pinterest:hover {
+      background-color: #b22222;
+      color: white;
+      box-sizing: border-box;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%; }
+    div.section-social .list-social .social-links i.fa.fa-pinterest:active {
+      background-color: #b22222;
+      color: white;
+      box-sizing: border-box;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%; }
+    div.section-social .list-social .social-links i.fa.fa-pinterest:visited {
+      text-decoration: none;
+      color: #a6a7a9; }
+    div.section-social .list-social .social-links i.fa.fa-instagram:hover {
+      background-color: #8b0000;
+      color: white;
+      box-sizing: border-box;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%; }
+    div.section-social .list-social .social-links i.fa.fa-instagram:active {
+      background-color: #8b0000;
+      color: white;
+      box-sizing: border-box;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%; }
+    div.section-social .list-social .social-links i.fa.fa-instagram:visited {
+      text-decoration: none;
+      color: #a6a7a9; }
+    div.section-social .list-social .social-links i.fa.fa-wifi:hover {
+      background-color: #dc143c;
+      color: white;
+      box-sizing: border-box;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%; }
+    div.section-social .list-social .social-links i.fa.fa-wifi:active {
+      background-color: #dc143c;
+      color: white;
+      box-sizing: border-box;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%; }
+    div.section-social .list-social .social-links i.fa.fa-wifi:visited {
+      text-decoration: none;
+      color: #a6a7a9; }
+
+/* Tabs Section Styles*/
+div.section-tabs {
+  background-color: #f5f5f5; }
+  div.section-tabs .tab-buttons {
+    margin-top: 5rem;
+    margin-bottom: 4rem; }
+    div.section-tabs .tab-buttons .btn-tabs:link {
+      display: block;
+      background-color: #333333;
+      width: 5.5rem;
+      height: 5.5rem;
+      color: #fff;
+      font-size: 1.5rem;
+      border-radius: 0;
+      margin-top: 2px;
+      position: relative;
+      box-shadow: 0 -0.1rem 0.2rem #000000; }
+      div.section-tabs .tab-buttons .btn-tabs:link .clicked {
+        background-color: #ff8b38 !important; }
+      div.section-tabs .tab-buttons .btn-tabs:link:hover {
+        background-color: #ff8b38; }
+      div.section-tabs .tab-buttons .btn-tabs:link span.link-text {
+        position: relative;
+        top: 28%;
+        color: #fff; }
+    div.section-tabs .tab-buttons .btn-tabs:visited {
+      color: #fff; }
+  div.section-tabs .tab-container {
+    margin-top: 4rem;
+    position: relative; }
+    div.section-tabs .tab-container .tabs-card {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    div.section-tabs .tab-container .tabs-card:not(:first-child) {
+      display: none; }
+    div.section-tabs .tab-container .section-tab3__title {
+      text-transform: capitalize;
+      margin-bottom: 1rem; }
+    div.section-tabs .tab-container .section-tabs__paragraph {
+      color: #a6a7a9;
+      word-spacing: 2px; }
+    div.section-tabs .tab-container .btn-download {
+      color: #ff8b38;
+      background-color: transparent;
+      border: 1px solid #ff8b38;
+      height: 3rem;
+      width: 25%;
+      margin-top: 2rem; }
+      div.section-tabs .tab-container .btn-download:hover {
+        color: #fff;
+        background-color: #ff8b38; }
+  div.section-tabs .img-container {
+    margin-top: 2rem; }
+    div.section-tabs .img-container .img-fluid {
+      max-width: 170%;
+      height: auto; }
+
+/*========Styles for the sub-section 
+ ==========layout/subsection
+ ==========================================*/
+.sub-section__image {
+  margin-top: 5rem; }
+.sub-section img#subcity {
+  box-shadow: 0.8rem -0.8rem 1rem grey; }
+.sub-section__box {
+  margin-top: 4.5rem; }
+  .sub-section__box-title {
+    font-weight: 700; }
+  .sub-section__box-divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ff8b38 !important;
+    width: 15%;
+    margin-left: 0; }
+  .sub-section__box-paragraph {
+    width: 80%;
+    margin-left: .5rem;
+    color: #a6a7a9; }
+.sub-section__sub {
+  width: 90%;
+  margin-left: 2rem; }
+  .sub-section__sub-box-icon {
+    display: inline-block;
+    color: #ff8b38;
+    float: left;
+    font-size: 1rem;
+    padding: 8px;
+    border: 1px solid #ff8b38;
+    border-radius: 50%;
+    margin-right: 1rem; }
+  .sub-section__sub-box-paragraph {
+    color: #a6a7a9; }
+
+/*# sourceMappingURL=style.css.map */

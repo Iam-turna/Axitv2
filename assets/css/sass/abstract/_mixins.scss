@@ -1,0 +1,28 @@
+@mixin secondary-brand-color {
+    color: $text-tertiary-color;
+}
+
+@mixin margin-button {
+    margin-bottom: 4.5rem;
+}
+
+@mixin margin-bottom {
+    margin-bottom: .5rem
+}
+
+@mixin links {
+    color: white;
+    box-sizing: border-box;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+@mixin visited {
+    text-decoration: none;
+    color: $text-primary-color;
+}
+
+@mixin tabs-margin-top {
+    margin-top: 5rem;
+}
