@@ -26,3 +26,10 @@
 @mixin tabs-margin-top {
     margin-top: 5rem;
 }
+
+@mixin horizontal-divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid $text-tertiary-color!important;
+    width: 15%;
+}

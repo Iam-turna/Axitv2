@@ -1,0 +1,28 @@
+.footer {
+    background-color: $footer-bg-color;
+    color: $text-primary-color;
+    margin-bottom: 0;
+    text-align: center;
+    position: relative;
+    &-list-social {
+        position: relative;
+        transform: translateY(37%);
+        left: 37%;
+        text-align: center;
+        .social-links {
+            color: $text-primary-color;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding-right: 1rem;
+            margin: auto;
+            &:hover {
+                color: $text-tertiary-color;
+            }
+        }
+    }
+    &-text {
+        margin-top: -1rem;
+        padding-bottom: 1.5rem;
+    }
+}

@@ -1,3 +1,109 @@
+.footer {
+  background-color: #000000;
+  color: #a6a7a9;
+  margin-bottom: 0;
+  text-align: center;
+  position: relative; }
+  .footer-list-social {
+    position: relative;
+    transform: translateY(37%);
+    left: 37%;
+    text-align: center; }
+    .footer-list-social .social-links {
+      color: #a6a7a9;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.5rem;
+      padding-right: 1rem;
+      margin: auto; }
+      .footer-list-social .social-links:hover {
+        color: #ff8b38; }
+  .footer-text {
+    margin-top: -1rem;
+    padding-bottom: 1.5rem; }
+
+                                /*----------------------------------------------
+--------STYLES FOR THE CONATCT SECTION----------*/
+.section-contactus {
+  text-align: center; }
+  .section-contactus__title {
+    padding-top: 4.5rem; }
+  .section-contactus__divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ff8b38 !important;
+    width: 15%; }
+  .section-contactus__text {
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
+    color: #a6a7a9; }
+  .section-contactus__textarea {
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #a6a7a9;
+    color: #a6a7a9;
+    background-color: transparent;
+    height: 36vh; }
+    .section-contactus__textarea:active {
+      width: 100%;
+      border-radius: 0;
+      border: 0;
+      border-bottom: 1px solid #a6a7a9;
+      color: #a6a7a9;
+      background-color: transparent; }
+  .section-contactus__form .form-group {
+    width: 75%;
+    margin-left: 0; }
+  .section-contactus__form .form-group:not(:last-child) {
+    margin-bottom: 3.2rem; }
+  .section-contactus__form .form-group:first-child {
+    margin-top: -2.2rem; }
+  .section-contactus__form .input-group-addon {
+    font-size: 1rem;
+    color: #a6a7a9;
+    text-align: left;
+    background-color: #fff;
+    border-bottom: 1px solid #a6a7a9;
+    border-left: 0;
+    border-top: 0;
+    border-radius: 0; }
+  .section-contactus__form .form-control {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #a6a7a9;
+    color: #a6a7a9;
+    background-color: transparent; }
+    .section-contactus__form .form-control input#email {
+      color: #a6a7a9;
+      background-color: transparent;
+      border-bottom: 1px solid #a6a7a9; }
+  .section-contactus span#message-addon {
+    color: grey;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    position: relative;
+    transform: translateY(-36%);
+    right: -15%;
+    position: relative;
+    transform: translateY(-59%);
+    right: -15%; }
+    .section-contactus span#message-addon:hover {
+      border-bottom: 1px solid #a6a7a9;
+      color: #a6a7a9;
+      background-color: transparent; }
+  .section-contactus .btn-download {
+    color: #ff8b38;
+    background-color: transparent;
+    border: 1px solid #ff8b38;
+    height: 3rem;
+    width: 18%;
+    margin-top: 2rem; }
+    .section-contactus .btn-download:hover {
+      color: #fff;
+      background-color: #ff8b38; }
+
 nav.navbar {
   background-color: #000000 !important; }
   nav.navbar a.navbar-brand {
@@ -324,6 +430,26 @@ div.section-tabs {
       max-width: 170%;
       height: auto; }
 
+/*----------------------------------------
+            PRICING STYLES
+------------------------------------------*/
+.pricing {
+  background-color: #f5f5f5; }
+  .pricing-header {
+    padding-top: 7.5rem;
+    text-align: center; }
+    .pricing-header__title {
+      margin-bottom: 1.4rem; }
+    .pricing-header__divider {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ff8b38 !important;
+      width: 15%; }
+    .pricing-header__text {
+      margin-top: 1.5rem;
+      margin-bottom: 6rem;
+      color: #a6a7a9; }
+
 /*========Styles for the sub-section 
  ==========layout/subsection
  ==========================================*/
@@ -336,11 +462,11 @@ div.section-tabs {
   .sub-section__box-title {
     font-weight: 700; }
   .sub-section__box-divider {
+    margin-left: 0;
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #ff8b38 !important;
-    width: 15%;
-    margin-left: 0; }
+    width: 15%; }
   .sub-section__box-paragraph {
     width: 80%;
     margin-left: .5rem;
@@ -359,5 +485,46 @@ div.section-tabs {
     margin-right: 1rem; }
   .sub-section__sub-box-paragraph {
     color: #a6a7a9; }
+
+.subcity {
+  background-color: #f5f5f5; }
+  .subcity-textbox {
+    margin-top: 6.5rem;
+    margin-bottom: 6.5rem; }
+    .subcity-textbox__title {
+      font-weight: 700; }
+    .subcity-textbox-divider {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ff8b38 !important;
+      width: 15%;
+      margin-left: 0; }
+    .subcity-textbox__paragraph {
+      color: #a6a7a9; }
+  .subcity-figure {
+    margin-top: 6.5rem;
+    margin-bottom: 3.5rem; }
+    .subcity-figure__image {
+      box-shadow: 1.2rem -1.8rem 2rem #ececec; }
+
+.whyus {
+  margin-top: 7.5rem;
+  margin-bottom: 4.5rem;
+  text-align: center; }
+  .whyus-divider {
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ff8b38 !important;
+    width: 15%; }
+  .whyus-paragraph {
+    margin-top: 1.5rem;
+    color: #a6a7a9; }
+  .whyus-icons {
+    color: #ff8b38;
+    font-size: 2rem;
+    padding: 1rem;
+    border: 3px solid #ff8b38;
+    border-radius: 50%;
+    margin-bottom: 2rem; }
 
 /*# sourceMappingURL=style.css.map */
