@@ -33,3 +33,9 @@
     border: 1px solid $text-tertiary-color!important;
     width: 15%;
 }
+
+@mixin table-text {
+    color: $heading-color;
+    background-color: $text-secondary-color;
+    padding: .5rem 0;
+}

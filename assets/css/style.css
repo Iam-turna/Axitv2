@@ -7,7 +7,7 @@
   .footer-list-social {
     position: relative;
     transform: translateY(37%);
-    left: 37%;
+    left: 39%;
     text-align: center; }
     .footer-list-social .social-links {
       color: #a6a7a9;
@@ -17,53 +17,35 @@
       padding-right: 1rem;
       margin: auto; }
       .footer-list-social .social-links:hover {
-        color: #ff8b38; }
+        color: #ff8b38;
+        font-weight: 700; }
   .footer-text {
     margin-top: -1rem;
     padding-bottom: 1.5rem; }
 
-                                /*----------------------------------------------
+/*----------------------------------------------
 --------STYLES FOR THE CONATCT SECTION----------*/
 .section-contactus {
   text-align: center; }
   .section-contactus__title {
-    padding-top: 4.5rem; }
+    padding-top: 5.5rem; }
   .section-contactus__divider {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #ff8b38 !important;
     width: 15%; }
   .section-contactus__text {
-    margin-top: 1.5rem;
-    margin-bottom: 6rem;
     color: #a6a7a9; }
-  .section-contactus__textarea {
-    width: 100%;
-    border-radius: 0;
-    border: 0;
-    border-bottom: 1px solid #a6a7a9;
-    color: #a6a7a9;
-    background-color: transparent;
-    height: 36vh; }
-    .section-contactus__textarea:active {
-      width: 100%;
-      border-radius: 0;
-      border: 0;
-      border-bottom: 1px solid #a6a7a9;
-      color: #a6a7a9;
-      background-color: transparent; }
+  .section-contactus__form .form-group:not(:last-child) {
+    margin-bottom: 3rem; }
   .section-contactus__form .form-group {
     width: 75%;
     margin-left: 0; }
-  .section-contactus__form .form-group:not(:last-child) {
-    margin-bottom: 3.2rem; }
-  .section-contactus__form .form-group:first-child {
-    margin-top: -2.2rem; }
   .section-contactus__form .input-group-addon {
     font-size: 1rem;
-    color: #a6a7a9;
+    color: #495057;
     text-align: left;
-    background-color: #fff;
+    background-color: transparent;
     border-bottom: 1px solid #a6a7a9;
     border-left: 0;
     border-top: 0;
@@ -76,20 +58,21 @@
     background-color: transparent; }
     .section-contactus__form .form-control input#email {
       color: #a6a7a9;
+      background-color: transparent; }
+  .section-contactus__textarea {
+    position: relative; }
+    .section-contactus__textarea label {
+      display: inline-block;
+      margin-bottom: -0.5rem;
       background-color: transparent;
-      border-bottom: 1px solid #a6a7a9; }
-  .section-contactus span#message-addon {
-    color: grey;
-    border: none;
-    background-color: transparent;
-    border-radius: 0;
-    position: relative;
-    transform: translateY(-36%);
-    right: -15%;
-    position: relative;
-    transform: translateY(-59%);
-    right: -15%; }
-    .section-contactus span#message-addon:hover {
+      color: #a6a7a9;
+      width: 15%;
+      margin-left: 0;
+      position: relative;
+      left: -43%; }
+    .section-contactus__textarea .form-control {
+      border-radius: 0;
+      border: 0;
       border-bottom: 1px solid #a6a7a9;
       color: #a6a7a9;
       background-color: transparent; }
@@ -98,8 +81,9 @@
     background-color: transparent;
     border: 1px solid #ff8b38;
     height: 3rem;
-    width: 18%;
-    margin-top: 2rem; }
+    width: 15%;
+    margin-top: 2rem;
+    margin-bottom: 3rem; }
     .section-contactus .btn-download:hover {
       color: #fff;
       background-color: #ff8b38; }
@@ -435,6 +419,8 @@ div.section-tabs {
 ------------------------------------------*/
 .pricing {
   background-color: #f5f5f5; }
+  .pricing .row {
+    margin-bottom: 5rem; }
   .pricing-header {
     padding-top: 7.5rem;
     text-align: center; }
@@ -449,6 +435,191 @@ div.section-tabs {
       margin-top: 1.5rem;
       margin-bottom: 6rem;
       color: #a6a7a9; }
+  .pricing-body__table-basic {
+    width: 22vw;
+    margin-right: 2vw;
+    text-align: center;
+    color: #fff; }
+    .pricing-body__table-basic--header {
+      background-color: black;
+      border-bottom: 0.3rem solid #ff8b38 !important; }
+      .pricing-body__table-basic--header-title {
+        padding: 1rem 0; }
+      .pricing-body__table-basic--header-price {
+        font-size: 5rem;
+        padding-bottom: .5rem;
+        font-style: italic;
+        font-weight: 700; }
+      .pricing-body__table-basic--header-paragraph {
+        color: #a6a7a9;
+        padding-bottom: 1.5rem;
+        font-style: italic; }
+    .pricing-body__table-basic--text {
+      color: #000000;
+      background-color: #fff;
+      padding: .5rem 0; }
+      .pricing-body__table-basic--text:not(:last-child) {
+        margin-bottom: .1rem; }
+  .pricing-body__table-professional {
+    width: 22vw;
+    margin-right: 2vw;
+    text-align: center;
+    color: #fff; }
+    .pricing-body__table-professional--header {
+      background-color: black;
+      border-bottom: 0.3rem solid #ff8b38 !important; }
+      .pricing-body__table-professional--header-title {
+        padding: 1rem 0;
+        margin-top: -2.5rem; }
+      .pricing-body__table-professional--header-price {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        font-style: italic;
+        font-weight: 700; }
+      .pricing-body__table-professional--header-paragraph {
+        color: #a6a7a9;
+        padding-bottom: 1rem;
+        font-style: italic;
+        position: relative; }
+        .pricing-body__table-professional--header-paragraph--popular {
+          background-color: #ff8b38;
+          font-style: italic;
+          color: #fff;
+          position: relative;
+          transform: translateY(5px);
+          top: 1.2rem; }
+    .pricing-body__table-professional--text {
+      color: #000000;
+      background-color: #fff;
+      padding: .5rem 0; }
+      .pricing-body__table-professional--text:not(:last-child) {
+        margin-bottom: .1rem; }
+  .pricing-body__table-enterprice {
+    width: 22vw;
+    text-align: center;
+    color: #fff; }
+    .pricing-body__table-enterprice--header {
+      background-color: black;
+      border-bottom: 0.3rem solid #ff8b38 !important; }
+      .pricing-body__table-enterprice--header-title {
+        padding: 1rem 0; }
+      .pricing-body__table-enterprice--header-price {
+        font-size: 5rem;
+        padding-bottom: .5rem;
+        font-style: italic;
+        font-weight: 700; }
+      .pricing-body__table-enterprice--header-paragraph {
+        color: #a6a7a9;
+        padding-bottom: 1.5rem;
+        font-style: italic; }
+    .pricing-body__table-enterprice--text {
+      color: #000000;
+      background-color: #fff;
+      padding: .5rem 0; }
+      .pricing-body__table-enterprice--text:not(:last-child) {
+        margin-bottom: .1rem; }
+
+hr.pricing-divider {
+  border: 1px solid #fff; }
+
+i.pricing-icon.fa.fa-dollar {
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 700; }
+
+/*-------------------------------------------
+-------------------STYLISH SECTION-----------
+----------------------------------------------*/
+.section-stylish {
+  text-align: center;
+  color: white;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section-stylish__title {
+    padding-top: 3rem; }
+  .section-stylish__divider {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #fff !important;
+    width: 15%; }
+  .section-stylish__text {
+    padding-bottom: 3rem; }
+  .section-stylish .button-dark {
+    color: #fff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #fff;
+    padding: 8px 15px 8px 15px;
+    border-radius: 0;
+    margin-bottom: 2rem;
+    transition: all 1sec; }
+    .section-stylish .button-dark:hover {
+      color: #ff8b38;
+      background-color: #000000;
+      border-color: #ff8b38;
+      transform: scale(1.1); }
+
+/*----------------------------------------------------------
+------------------STYLES FOR THE TESTIMONY SECTION----------*/
+.testimonial {
+  text-align: center;
+  color: #a6a7a9; }
+  .testimonial-header {
+    margin-bottom: 4rem; }
+    .testimonial-header__title {
+      color: #000000;
+      padding-top: 3rem; }
+    .testimonial-header__divider {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ff8b38 !important;
+      width: 15%; }
+    .testimonial-header__text {
+      padding: 2.5re 0; }
+  .testimonial-body {
+    position: relative; }
+    .testimonial-body__text {
+      background-color: #dadadb;
+      padding: 2rem;
+      border-radius: .5rem;
+      color: black;
+      margin-bottom: 2.5rem; }
+    .testimonial-body__link {
+      position: relative;
+      width: 50%;
+      border-radius: 50%;
+      float: left;
+      position: relative; }
+      .testimonial-body__link-image {
+        border-radius: 50%; }
+      .testimonial-body__link-image--name {
+        color: #000000;
+        margin-top: 6rem;
+        font-weight: 700;
+        text-decoration: none;
+        display: none; }
+      .testimonial-body__link:hover .testimonial-body__link-image {
+        filter: blur(2px); }
+      .testimonial-body__link:hover .testimonial-body__link-image--name {
+        position: absolute;
+        font-size: 1.2rem;
+        font-weight: 900;
+        color: #000000;
+        top: -2rem;
+        left: 50px;
+        display: inline-block;
+        filter: none; }
+    .testimonial-body__image {
+      width: 50%;
+      border-radius: 50%;
+      float: left;
+      position: relative; }
+    .testimonial-body__image-name {
+      color: #000000;
+      margin-top: 6rem;
+      font-weight: 700;
+      text-decoration: none; }
 
 /*========Styles for the sub-section 
  ==========layout/subsection

@@ -184,6 +184,9 @@ div.section-tabs {
 
 .pricing {
     background-color: $customer-testimony-bg;
+    .row {
+        margin-bottom: 5rem;
+    }
     &-header {
         padding-top: 7.5rem;
         text-align: center;
@@ -197,6 +200,239 @@ div.section-tabs {
             margin-top: 1.5rem;
             margin-bottom: 6rem;
             color: $text-primary-color;
+        }
+    }
+    &-body__table-basic {
+        width: 22vw;
+        margin-right: 2vw;
+        text-align: center;
+        color: $text-secondary-color;
+        //header of the basic table
+        &--header {
+            background-color: black;
+            border-bottom: .3rem solid $text-tertiary-color!important;
+            &-title {
+                padding: 1rem 0;
+            }
+            &-price {
+                font-size: 5rem;
+                padding-bottom: .5rem;
+                font-style: italic;
+                font-weight: 700;
+            }
+            &-paragraph {
+                color: $text-primary-color;
+                padding-bottom: 1.5rem;
+                font-style: italic;
+            }
+        }
+        //Body of the basic table
+        &--text {
+            @include table-text;
+            &:not(:last-child) {
+                margin-bottom: .1rem;
+            }
+        }
+    }
+    //Professional table
+    &-body__table-professional {
+        width: 22vw;
+        margin-right: 2vw;
+        text-align: center;
+        color: $text-secondary-color;
+        &--header {
+            background-color: black;
+            border-bottom: .3rem solid $text-tertiary-color!important;
+            &-title {
+                padding: 1rem 0;
+                margin-top: -2.5rem;
+            }
+            &-price {
+                font-size: 5rem;
+                padding-bottom: 1rem;
+                font-style: italic;
+                font-weight: 700;
+            }
+            &-paragraph {
+                color: $text-primary-color;
+                padding-bottom: 1rem;
+                font-style: italic;
+                position: relative;
+                &--popular {
+                    background-color: $text-tertiary-color;
+                    font-style: italic;
+                    color: $text-secondary-color;
+                    position: relative;
+                    transform: translateY(5px);
+                    top: 1.2rem;
+                }
+            }
+        }
+        //Body of the professional table
+        &--text {
+            @include table-text;
+            &:not(:last-child) {
+                margin-bottom: .1rem;
+            }
+        }
+    }
+    //Enterprice table
+    &-body__table-enterprice {
+        width: 22vw;
+        text-align: center;
+        color: $text-secondary-color;
+        //header of the enterprice table
+        &--header {
+            background-color: black;
+            border-bottom: .3rem solid $text-tertiary-color!important;
+            &-title {
+                padding: 1rem 0;
+            }
+            &-price {
+                font-size: 5rem;
+                padding-bottom: .5rem;
+                font-style: italic;
+                font-weight: 700;
+            }
+            &-paragraph {
+                color: $text-primary-color;
+                padding-bottom: 1.5rem;
+                font-style: italic;
+            }
+        }
+        //Body of the enterprice table
+        &--text {
+            @include table-text;
+            &:not(:last-child) {
+                margin-bottom: .1rem;
+            }
+        }
+    }
+}
+
+hr.pricing-divider {
+    border: 1px solid $text-secondary-color;
+}
+
+i.pricing-icon.fa.fa-dollar {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+/*-------------------------------------------
+-------------------STYLISH SECTION-----------
+----------------------------------------------*/
+
+.section-stylish {
+    text-align: center;
+    color: white;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__title {
+        padding-top: 3rem;
+    }
+    &__divider {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid $text-secondary-color!important;
+        width: 15%;
+    }
+    &__text {
+        padding-bottom: 3rem;
+    }
+    .button-dark {
+        color: $text-secondary-color;
+        background-color: transparent;
+        background-image: none;
+        border-color: $text-secondary-color;
+        padding: 8px 15px 8px 15px;
+        border-radius: 0;
+        margin-bottom: 2rem;
+        transition: all 1sec;
+        &:hover {
+            color: $text-tertiary-color;
+            background-color: $heading-color;
+            border-color: $text-tertiary-color;
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+/*----------------------------------------------------------
+------------------STYLES FOR THE TESTIMONY SECTION----------*/
+
+.testimonial {
+    text-align: center;
+    color: $text-primary-color;
+    &-header {
+        margin-bottom: 4rem;
+        &__title {
+            color: $heading-color;
+            padding-top: 3rem;
+        }
+        &__divider {
+            @include horizontal-divider;
+        }
+        &__text {
+            padding: 2.5re 0;
+        }
+    }
+    &-body {
+        position: relative;
+        &__text {
+            background-color: lighten($text-primary-color, 20%);
+            padding: 2rem;
+            border-radius: .5rem;
+            color: black;
+            margin-bottom: 2.5rem;
+        }
+        &__link {
+            position: relative;
+            &-image {
+                border-radius: 50%;
+            }
+            width: 50%;
+            border-radius: 50%;
+            float: left;
+            position: relative;
+            &-image--name {
+                color: $heading-color;
+                margin-top: 6rem;
+                font-weight: 700;
+                text-decoration: none;
+                display: none;
+            }
+            &:hover {
+                .testimonial-body__link-image {
+                    filter: blur(2px);
+                }
+                .testimonial-body__link-image--name {
+                    position: absolute;
+                    font-size: 1.2rem;
+                    font-weight: 900;
+                    color: $heading-color;
+                    top: -2rem;
+                    left: 50px;
+                    display: inline-block;
+                    filter: none;
+                }
+            }
+        }
+        &__image {
+            width: 50%;
+            border-radius: 50%;
+            float: left;
+            position: relative;
+        }
+        &__image-name {
+            color: $heading-color;
+            margin-top: 6rem;
+            font-weight: 700;
+            text-decoration: none;
         }
     }
 }

@@ -1,97 +1,78 @@
-                                /*----------------------------------------------
+/*----------------------------------------------
 --------STYLES FOR THE CONATCT SECTION----------*/
-                                
-                                .section-contactus {
-                                    text-align: center;
-                                    &__title {
-                                        padding-top: 4.5rem;
-                                    }
-                                    &__divider {
-                                        @include horizontal-divider;
-                                    }
-                                    &__text {
-                                        margin-top: 1.5rem;
-                                        margin-bottom: 6rem;
-                                        color: $text-primary-color;
-                                    }
-                                    &__textarea {
-                                        width: 100%;
-                                        border-radius: 0;
-                                        border: 0;
-                                        border-bottom: 1px solid $text-primary-color;
-                                        color: $text-primary-color;
-                                        background-color: transparent;
-                                        height: 36vh;
-                                        &:active {
-                                            width: 100%;
-                                            border-radius: 0;
-                                            border: 0;
-                                            border-bottom: 1px solid $text-primary-color;
-                                            color: $text-primary-color;
-                                            background-color: transparent;
-                                        }
-                                    }
-                                    &__form {
-                                        .form-group {
-                                            width: 75%;
-                                            margin-left: 0;
-                                        }
-                                        .form-group:not(:last-child) {
-                                            margin-bottom: 3.2rem;
-                                        }
-                                        .form-group:first-child {
-                                            margin-top: -2.2rem;
-                                        }
-                                        .input-group-addon {
-                                            font-size: 1rem;
-                                            color: $text-primary-color;
-                                            text-align: left;
-                                            background-color: #fff;
-                                            border-bottom: 1px solid $text-primary-color;
-                                            border-left: 0;
-                                            border-top: 0;
-                                            border-radius: 0;
-                                        }
-                                        .form-control {
-                                            border-radius: 0;
-                                            border: 0;
-                                            border-bottom: 1px solid $text-primary-color;
-                                            color: $text-primary-color;
-                                            background-color: transparent;
-                                            input#email {
-                                                color: $text-primary-color;
-                                                background-color: transparent;
-                                                border-bottom: 1px solid $text-primary-color;
-                                            }
-                                        }
-                                    }
-                                    span#message-addon {
-                                        color: grey;
-                                        border: none;
-                                        background-color: transparent;
-                                        border-radius: 0;
-                                        position: relative;
-                                        transform: translateY(-36%);
-                                        right: -15%;
-                                        position: relative;
-                                        transform: translateY(-59%);
-                                        right: -15%;
-                                        &:hover {
-                                            border-bottom: 1px solid $text-primary-color;
-                                            color: $text-primary-color;
-                                            background-color: transparent;
-                                        }
-                                    }
-                                    .btn-download {
-                                        color: $text-tertiary-color;
-                                        background-color: transparent;
-                                        border: 1px solid $text-tertiary-color;
-                                        height: 3rem;
-                                        width: 18%;
-                                        margin-top: 2rem;
-                                        &:hover {
-                                            color: $text-secondary-color;
-                                            background-color: $text-tertiary-color;
-                                        }
-                                    }
-                                }
+
+.section-contactus {
+    text-align: center;
+    &__title {
+        padding-top: 5.5rem;
+    }
+    &__divider {
+        @include horizontal-divider;
+    }
+    &__text {
+        color: $text-primary-color;
+    }
+    &__form {
+        .form-group:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+        .form-group {
+            width: 75%;
+            margin-left: 0;
+        }
+        .input-group-addon {
+            font-size: 1rem;
+            color: #495057;
+            text-align: left;
+            background-color: transparent;
+            border-bottom: 1px solid $text-primary-color;
+            border-left: 0;
+            border-top: 0;
+            border-radius: 0;
+        }
+        .form-control {
+            border-radius: 0;
+            border: 0;
+            border-bottom: 1px solid $text-primary-color;
+            color: $text-primary-color;
+            background-color: transparent;
+            input#email {
+                color: $text-primary-color;
+                background-color: transparent
+            }
+        }
+    }
+    &__textarea {
+        position: relative;
+        label {
+            display: inline-block;
+            margin-bottom: -0.5rem;
+            background-color: transparent;
+            color: $text-primary-color;
+            width: 15%;
+            margin-left: 0;
+            position: relative;
+            left: -43%;
+        }
+        .form-control {
+            border-radius: 0;
+            border: 0;
+            border-bottom: 1px solid $text-primary-color;
+            color: $text-primary-color;
+            background-color: transparent;
+        }
+    }
+    .btn-download {
+        color: $text-tertiary-color;
+        background-color: transparent;
+        border: 1px solid $text-tertiary-color;
+        height: 3rem;
+        width: 15%;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        &:hover {
+            color: $text-secondary-color;
+            background-color: $text-tertiary-color;
+        }
+    }
+}
