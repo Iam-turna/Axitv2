@@ -125,7 +125,13 @@ nav.navbar {
   height: 75vh;
   background-image: url(../images/banner.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative;
+  /*--------------------MEDIA QUARIES-------------*/ }
+  @media only screen and (max-width: 320px) {
+    .banner-section {
+      width: 140%;
+      height: 160vh; } }
   .banner-section .banner-section-box1 {
     margin-top: 7rem; }
     .banner-section .banner-section-box1 .banner-section-box1__brand {
@@ -135,19 +141,37 @@ nav.navbar {
       color: #fff; }
       .banner-section .banner-section-box1 .banner-section-box1__brand .banner-brand__secondary {
         color: #ff8b38; }
+      @media only screen and (max-width: 320px) {
+        .banner-section .banner-section-box1 .banner-section-box1__brand {
+          font-size: 4rem;
+          word-spacing: .5rem;
+          text-align: center; } }
     .banner-section .banner-section-box1 .banner-section-box1__subbrand {
       color: #fff; }
+      @media only screen and (max-width: 320px) {
+        .banner-section .banner-section-box1 .banner-section-box1__subbrand {
+          font-size: 1.5rem;
+          word-spacing: .5rem;
+          text-align: center; } }
     .banner-section .banner-section-box1 .divider {
       margin-top: 1rem;
       margin-bottom: 1rem;
       border: 1px solid #fff !important;
       width: 15%;
       margin-left: 0; }
+      @media only screen and (max-width: 320px) {
+        .banner-section .banner-section-box1 .divider {
+          margin: 1rem  auto; } }
     .banner-section .banner-section-box1 .banner-section-box1__text {
       margin-top: 1.5rem;
       margin-bottom: 2.5rem;
       color: grey;
       width: 80%; }
+      @media only screen and (max-width: 320px) {
+        .banner-section .banner-section-box1 .banner-section-box1__text {
+          font-size: 1rem;
+          text-align: center;
+          margin: 1rem auto; } }
     .banner-section .banner-section-box1 .button-dark {
       color: #fff;
       background-color: transparent;
@@ -156,6 +180,11 @@ nav.navbar {
       padding: 8px 15px 8px 15px;
       border-radius: 0;
       transition: all 1sec; }
+      @media only screen and (max-width: 320px) {
+        .banner-section .banner-section-box1 .button-dark {
+          position: relative;
+          left: 40%;
+          margin: 1.5rem auto; } }
       .banner-section .banner-section-box1 .button-dark:hover {
         color: #ff8b38;
         background-color: #000000;
@@ -170,6 +199,16 @@ nav.navbar {
     padding: 2rem;
     width: 90%;
     position: relative; }
+    @media only screen and (max-width: 320px) {
+      .banner-section .banner-section-box2 {
+        background-color: transparent;
+        margin: 1rem auto;
+        height: 20.85rem;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 2rem;
+        width: 90%;
+        position: relative; } }
     .banner-section .banner-section-box2 .form-header {
       color: #000000;
       background-color: #f5f5f5;
@@ -208,7 +247,7 @@ nav.navbar {
         background-color: transparent; }
         .banner-section .banner-section-box2 .form-body .form-control input#email {
           color: #a6a7a9;
-          background-color: transparent; }
+          border-bottom: 1px solid black; }
     .banner-section .banner-section-box2 .form-footer {
       background-color: #ff9b51;
       z-index: 2;
@@ -227,16 +266,32 @@ nav.navbar {
       border-radius: 0;
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px; }
+      @media only screen and (max-width: 320px) {
+        .banner-section .banner-section-box2 button.btn.bottom-button {
+          width: 118.2vw; } }
       .banner-section .banner-section-box2 button.btn.bottom-button:hover {
         background-color: #eb6200;
         font-weight: 600; }
 
 /*Styles for the social networks section*/
+@media only screen and (max-width: 320) {
+  div.section-social {
+    text-align: center; } }
 div.section-social .row {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem; }
+  @media only screen and (max-width: 320) {
+    div.section-social .row {
+      margin: 1.5rem auto; } }
+@media only screen and (max-width: 320) {
+  div.section-social .section-social__text {
+    width: 100vw; } }
 div.section-social .section-social__title {
   margin-bottom: 0.5rem; }
+  @media only screen and (max-width: 320) {
+    div.section-social .section-social__title {
+      text-align: center;
+      background-color: red; } }
 div.section-social .social-social_paragraph {
   color: #a6a7a9; }
 div.section-social .list-social {

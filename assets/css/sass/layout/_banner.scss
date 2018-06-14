@@ -6,6 +6,13 @@
     background-image: url(../images/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    /*--------------------MEDIA QUARIES-------------*/
+    @media only screen and (max-width: 320px) {
+        width: 140%;
+        height: 160vh;
+        
+    }
     .banner-section-box1 {
         margin-top: 7rem;
         .banner-section-box1__brand {
@@ -16,9 +23,23 @@
             .banner-brand__secondary {
                 @include secondary-brand-color;
             }
+          @media only screen and (max-width:320px){
+            font-size: 4rem;
+            word-spacing: .5rem;
+            text-align: center;
+            
+            
+              
+          }
         }
         .banner-section-box1__subbrand {
             color: $text-secondary-color;
+           @media only screen and (max-width:320px){
+            font-size: 1.5rem;
+            word-spacing: .5rem;
+            text-align: center;
+           
+          }
         }
         .divider {
             margin-top: 1rem;
@@ -26,12 +47,20 @@
             border: 1px solid $text-secondary-color!important;
             width: 15%;
             margin-left: 0;
+           @media only screen and (max-width:320px){
+            margin: 1rem  auto;
+          }
         }
         .banner-section-box1__text {
             margin-top: 1.5rem;
             margin-bottom: 2.5rem;
             color: grey;
             width: 80%;
+           @media only screen and (max-width:320px){
+              font-size: 1rem;
+             text-align: center;
+             margin: 1rem auto;
+          }
         }
         .button-dark {
             color: $text-secondary-color;
@@ -41,6 +70,12 @@
             padding: 8px 15px 8px 15px;
             border-radius: 0;
             transition: all 1sec;
+             @media only screen and (max-width:320px){
+               position: relative;
+               left: 40%;
+               margin: 1.5rem auto;
+           
+          }
             &:hover {
                 color: $text-tertiary-color;
                 background-color: $heading-color;
@@ -58,6 +93,17 @@
         padding: 2rem;
         width: 90%;
         position: relative;
+       @media only screen and (max-width:320px){
+          background-color: transparent;
+          margin: 1rem auto;
+          height: 20.85rem;
+          box-sizing: border-box;
+          text-align: center;
+          padding: 2rem;
+          width: 90%;
+          position: relative;
+            
+          }
         .form-header {
             color: $footer-background-color;
             background-color: $form-header-bg-color;
@@ -99,7 +145,7 @@
                 background-color: transparent;
                 input#email {
                     color: $text-primary-color;
-                    background-color: transparent
+                    border-bottom: 1px solid black;
                 }
             }
         }
@@ -122,6 +168,9 @@
             border-radius: 0;
             border-bottom-left-radius: 6px;
             border-bottom-right-radius: 6px;
+          @media only screen and (max-width:320px){
+             width: 118.2vw;
+          }
             &:hover {
                 background-color: darken($text-tertiary-color, 15%);
                 font-weight: 600;
